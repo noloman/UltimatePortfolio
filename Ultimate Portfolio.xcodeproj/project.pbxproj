@@ -14,6 +14,8 @@
 		32CFF4AB27438BDA00F16A36 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32CFF4A927438BDA00F16A36 /* Model.xcdatamodeld */; };
 		32CFF4AF27438DA300F16A36 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CFF4AE27438DA300F16A36 /* DataController.swift */; };
 		32CFF4B42743967600F16A36 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CFF4B32743967600F16A36 /* CloudKit.framework */; };
+		32CFF4B62743984A00F16A36 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CFF4B52743984A00F16A36 /* HomeView.swift */; };
+		32CFF4B8274398CC00F16A36 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CFF4B7274398CC00F16A36 /* ProjectsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		32CFF4B02743965F00F16A36 /* Ultimate Portfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ultimate Portfolio.entitlements"; sourceTree = "<group>"; };
 		32CFF4B12743966800F16A36 /* Ultimate-Portfolio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Ultimate-Portfolio-Info.plist"; sourceTree = SOURCE_ROOT; };
 		32CFF4B32743967600F16A36 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		32CFF4B52743984A00F16A36 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		32CFF4B7274398CC00F16A36 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 		32CFF47E27438B3E00F16A36 /* Ultimate Portfolio */ = {
 			isa = PBXGroup;
 			children = (
+				32CFF4B7274398CC00F16A36 /* ProjectsView.swift */,
+				32CFF4B52743984A00F16A36 /* HomeView.swift */,
 				32CFF4B12743966800F16A36 /* Ultimate-Portfolio-Info.plist */,
 				32CFF4B02743965F00F16A36 /* Ultimate Portfolio.entitlements */,
 				32CFF4A927438BDA00F16A36 /* Model.xcdatamodeld */,
@@ -159,9 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32CFF4B8274398CC00F16A36 /* ProjectsView.swift in Sources */,
 				32CFF48227438B3E00F16A36 /* ContentView.swift in Sources */,
 				32CFF4AF27438DA300F16A36 /* DataController.swift in Sources */,
 				32CFF48027438B3E00F16A36 /* UltimatePortfolioApp.swift in Sources */,
+				32CFF4B62743984A00F16A36 /* HomeView.swift in Sources */,
 				32CFF4AB27438BDA00F16A36 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
