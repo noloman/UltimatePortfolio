@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ProjectsView: View {
+    static let openProjects = "OpenProjects"
+    static let closedProjects = "ClosedProjects"
     let showClosedProjects: Bool
     let projects: FetchRequest<Project>
     
