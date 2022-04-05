@@ -11,17 +11,17 @@ struct ProjectsView: View {
     static let openProjects = "OpenProjects"
     static let closedProjects = "ClosedProjects"
     let showClosedProjects: Bool
-    let projects: FetchRequest<Project>
+    @FetchRequest var projects: FetchedResults<Project>
     
     init(showClosedProjects: Bool) {
         self.showClosedProjects = showClosedProjects
-        projects = FetchRequest(entity: Project.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Project.title, ascending: false)], predicate: NSPredicate(format: "closed = %d", showClosedProjects), animation: .default)
+        _projects = FetchRequest(entity: Project.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Project.title, ascending: false)], predicate: NSPredicate(format: "closed = %d", showClosedProjects), animation: .default)
     }
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(projects.wrappedValue) { project in
+                ForEach(projects) { project in
                     Section(header: ProjectHeaderView(project: project)) {
                         ForEach(project.projectItems, content: ItemRowView.init)
                     }
